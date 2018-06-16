@@ -434,8 +434,8 @@ Fixpoint incr (n : bin) : bin :=
 Fixpoint bin_to_nat (n: bin) :=
   match n with
   | Zero => O
-  | Double n' => 2 * (bin_to_nat n')
-  | Double_Plus_One n' => 1 + 2 * (bin_to_nat n')
+  | Double n' => bin_to_nat n' + bin_to_nat n'
+  | Double_Plus_One n' => 1 + bin_to_nat n' + bin_to_nat n'
   end.
 (* c *)
 Example test_bin_incr1: (bin_to_nat (incr (incr (incr Zero)))) = 3.
