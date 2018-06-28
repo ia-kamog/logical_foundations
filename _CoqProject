@@ -1,4 +1,5 @@
 -R . LogicalFoundations
 Basics.v
 Induction.v
+Lists.v
 -I .
