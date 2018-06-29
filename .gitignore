@@ -2,3 +2,5 @@
 *.glob
 CoqMakefile.conf
 CoqMakefile
+.*.aux
+.coqdeps.d
