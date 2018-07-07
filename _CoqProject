@@ -4,4 +4,5 @@ Induction.v
 Lists.v
 Poly.v
 Tactics.v
+Logic.v
 -I .
